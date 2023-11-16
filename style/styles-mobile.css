@@ -1,0 +1,91 @@
+.logo {
+  display: flex;
+  position: absolute;
+  top: 40px;
+  left: 14%;
+  justify-content: center;
+}
+.logo img {
+  width: fit-content;
+  height: 44px;
+}
+
+.container {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.container .wheel .jobName span {
+  font-size: 0.6em;
+  font-weight: 500;
+}
+.container .spinBtn {
+  width: 30px;
+  height: 30px;
+}
+
+.container .spinBtn::before {
+  top: -18px;
+  width: 12px;
+  height: 19px;
+}
+
+.container .spinBtn img {
+  height: 20px;
+}
+
+.container .wheel .num4 {
+  word-spacing: -2.4px;
+}
+
+.container .wheel .jobName img {
+  width: 32px;
+}
+
+.container .wheel .num1 + img {
+  top: 75px;
+  left: 36px;
+}
+.container .wheel .num2 + img {
+  top: 66px;
+  left: 23px;
+  rotate: 43deg;
+}
+.container .wheel .num3 + img {
+  top: 29px;
+  left: 67px;
+}
+.container .wheel .num4 + img {
+  top: 75px;
+  left: 36px;
+  rotate: 196deg;
+}
+.container .wheel .num5 + img {
+  top: 75px;
+  left: 36px;
+}
+
+.fullWindow {
+  display: none;
+}
+
+.popup {
+  width: 85%;
+}
+
+.popup .icon {
+  width: 48px;
+  height: 48px;
+}
+
+.popup .title {
+  font-size: 16px;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width:1200px)"
+      href="./style/styles-labtop-l.css"
+    />
+    
+    <link
+      rel="stylesheet"
+      media="screen and (min-width:768px) and (max-width: 1023px)"
+      href="/style/tablet-l.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width:375px) and (max-width: 767px)"
+      href="./style/styles-tablet.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width:320px) and (max-width: 374px)"
+      href="./style/styles-mobile.css"
+    />
+
+    <title>Spin Wheel</title>
+  </head>
+  <body>
+    <div id="popup1" class="overlay" onclick="removeOverlay()">
+      <div class="popup">
+        <div class="icon">
+          <img class="icon" src="./img/hire.png" alt="hire image" />
+        </div>
+        <h2 class="title">congratulation</h2>
+        <div class="description"></div>
+          <button onclick="removeOverlay()">Dismiss</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="logo">
+      <img src="./img/logo .png" alt="logo image" />
+    </div>
+
+    <div class="container">
+      <div class="wheel" onclick="spin()">
+        <div class="jobName" style="--i: 1; --clr: #eb1e24">
+          <span class="num1">IT Manager</span>
+          <img src="./img/it_manager.png" alt="" />
+        </div>
+        <div class="jobName" style="--i: 2; --clr: #fbef22">
+          <span class="num2">Chief Executive <br />Officer</span>
+          <img src="./img/chief_executive_officer.png" alt="" />
+        </div>
+        <div class="jobName" style="--i: 3; --clr: #39c0f0">
+          <span class="num3">Human Resource Manager</span>
+          <img src="./img/human_resource_manager.png" alt="" />
+        </div>
+        <div class="jobName" style="--i: 4; --clr: #f36722">
+          <span class="num4">Chief Information<br/>Officer</span>
+          <img src="./img/chief_information_officer.png" alt="" />
+        </div>
+        <div class="jobName" style="--i: 5; --clr: #44b54a">
+          <span class="num5">Head of corporate Communications</span>
+          <img src="./img/head_of_corporate_communications.png" alt="" />
+        </div>
+      </div>
+
+      <button class="spinBtn" onclick="spin()">
+        <img src="./img/logo_spin .png" alt="spin logo" />
+      </button>
+    </div>
+    <!-- ################################# -->
+    <canvas id="my-canvas" onclick="removeOverlay()"></canvas>
+    <!-- ################################# -->
+    <button class="fullWindow" onclick="fullWindowMood()">
+      Full Screen Mode
+    </button>
+    <!-- ################################# -->
+    <audio
+      src="assets/applause.mp3"
+      controls="controls"
+      id="applause"
+      type="audion/mp3"
+    ></audio>
+    <audio
+      src="assets/wheel-spin.mp3"
+      controls="controls"
+      id="wheell"
+      type="audion/mp3"
+    ></audio>
+  </body>
+  <script src="main.js"></script>
+  <script src="index.min.js"></script>
+</html>

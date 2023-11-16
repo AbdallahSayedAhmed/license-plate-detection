@@ -1,0 +1,42 @@
+.container {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fullWindow {
+  display: none;
+}
+
+.logo {
+  position: absolute;
+  top: 92px;
+  left: 50%;
+  user-select: none;
+  transform: translate(-50%, -50%);
+}
+
+.container .wheel .jobName img {
+  width: 92px;
+}
+
+.container .wheel .num2 + img {
+  top: 184px;
+  left: 54px;
+  rotate: 35deg;
+}
+
+.container .wheel .num4 + img {
+  left: 214px;
+}
+
+.container .wheel .num5 + img {
+  top: 199px;
+  left: 62px;
+}
